@@ -1,4 +1,59 @@
+#pagewrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 #header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#wrapper {
+    display: flex;
+    flex: 5;
+}
+
+#leftbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    flex: 1;
+}
+
+#leftbar > button {
+    margin: 10px;
+}
+
+#catalog{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 5;
+}
+
+.item {
+    border: thin solid black;
+    height: 200px;
+    width: 150px;
+    margin: 5px;
+}
+
+#rightbar {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#rightbar > button {
+    margin: 10px;
+}
+
+#footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
 }
